@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rL1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/banglanewspapers"
+            android:alpha=".3"
+            >
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news"
+            android:layout_centerVertical="true"
+            android:alpha=".8"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:id="@+id/logo"
+
+
+            >
+
+        </ImageView>
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstrt"
+            android:layout_below="@id/logo"
+            android:text="Enter"
+            android:textSize="25dp"
+            android:id="@+id/startBT"
+            >
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:id="@+id/rL2"
+    android:visibility="visible"
+    >
+
+
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:background="@drawable/banglanewspapers"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="3"
+             >
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.9"
+                 android:background="@drawable/buttontype"
+                 android:text="Bangla"
+                 android:textColor="#000000"
+
+                 >
+
+             </Button>
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.9"
+                 android:background="@drawable/buttontype"
+                 android:text="English"
+                 android:textColor="#000000"
+                 >
+
+             </Button>
+             <Button
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1.2"
+                 android:background="@drawable/buttontype"
+                 android:text="International"
+                 android:textColor="#000000"
+                 >
+
+             </Button>
+         </LinearLayout>
+
+         <WebView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/wprothoAlo"
+             android:scrollbars="vertical"
+             android:nestedScrollingEnabled="true"
+
+
+
+
+
+             >
+
+         </WebView>
+
+
+
+
+     </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@drawable/white"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/prothomalo"
+                android:elevation="10dp"
+                android:id="@+id/prothomaloBT"
+                android:layout_margin="2dp"
+
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bdpratidin"
+                android:elevation="10dp"
+                android:id="@+id/bdproBT"
+                android:layout_margin="2dp"
+
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kalerkantho"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/kalerBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ittefaq"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/ittefaqBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/jugantor"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/juganttorBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mzamin"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/mzaminBT"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/manobkantha"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/manobkanthaBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/jaijaidinbd"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/jaijaidinBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/janakantha"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/janakanthoBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/sangbad"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/sangbadBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/amadershomoy"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/amadersomoyBT"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bhorerkagoj"
+                android:elevation="10dp"
+                android:layout_margin="2dp"
+                android:id="@+id/bhorerkagojBT"
+                >
+
+            </ImageView>
+        </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>
